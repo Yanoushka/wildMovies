@@ -1,0 +1,153 @@
+.nav ul.dropdown-menu li a.selected {
+  background-color: #eee;
+  font-weight: bold;
+}
+html {
+  min-height: 100%;
+}
+div.container-fluid {
+  background: black;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.container header .btn {
+  float: right;
+}
+
+.error {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgb(206, 24, 24);
+  color: white;
+}
+
+main ul.categories {
+  -webkit-padding-start: 0;
+  display: inline-flex;
+  list-style: none;
+}
+
+main ul.categories li {
+  padding: 5px 10px;
+}
+
+main ul.categories li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+main ul.categories li.selected {
+  font-weight: bold;
+}
+
+movies-list table {
+  border-collapse: separate;
+  border-spacing: 0 4px;
+}
+
+movies-list table tr {
+  background-color: #eee;
+}
+
+movies-list table tr:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+movies-list table tr>td {
+  padding: 10px;
+}
+
+movies-list table tr>td>img {
+  max-width: 100px;
+}
+
+movie-details>div {
+  display: block;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+movie-details>div .commands button {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  float: right;
+}
+
+movie-details>div img {
+  margin-bottom: 20px;
+}
+
+movie-details>div .title {
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+
+movie-add div.button {
+  display: block;
+}
+
+movie-add div.drop-box {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: 1px dashed #eee;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+movie-add img {
+  width: 100%;
+}
+
+users-list table {
+  margin-top: 50px;
+}
+
+#linkedin a:hover {
+  color: #1B85BD !important;
+  -webkit-transition: all 0.50s ease-in-out;
+  -moz-transition: all 0.50s ease-in-out;
+  -o-transition: all 0.50s ease-in-out;
+  transition: all 0.50s ease-in-out;
+}
+
+#github a:hover {
+  color: #5FD1A5 !important;
+  -webkit-transition: all 0.50s ease-in-out;
+  -moz-transition: all 0.50s ease-in-out;
+  -o-transition: all 0.50s ease-in-out;
+  transition: all 0.50s ease-in-out;
+  cursor: pointer;
+}
+
+#linkedin {
+  display: inline;
+  padding: 0px 5px 0px 5px;
+}
+
+#github {
+  display: inline;
+  padding: 0px 5px 0px 5px;
+}
+i {
+color: white;
+padding-top: 10px;
+}
+#footer {
+  background-color: #1D1E1F;
+  color: #F4F0F1;
+  height: 100px;
+}
+.adding {
+  padding-bottom: 14em;
+}
+
+.detailsMovie {
+  padding-top: 2em;
+}

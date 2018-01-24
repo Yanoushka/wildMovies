@@ -1,0 +1,24 @@
+<div class="container">
+    <header>
+      <ul class="categories">
+        <li ui-sref="main.movies({categoryId: 0})" ui-sref-active="selected">
+          {{'ALL' | translate}}
+        </li>
+        <li ng-repeat="category in $ctrl.categories track by category.id" ui-sref="main.movies({categoryId: category.id})" ui-sref-active="selected">
+          {{category.name}}
+        </li>
+      </ul>
+      <a ui-sref="main.add" class="btn btn-success">{{'BUTTON.ADD' | translate}}</a>
+    </header>
+    <div class="error" ng-show="$ctrl.error.length">{{$ctrl.error}}</div>
+    <table ng-hide="$ctrl.error.length" class="table">
+      <tbody>
+        <tr ng-repeat="movie in $ctrl.movies track by movie.id" ui-sref="main.details({id: movie.id})">
+          <td class="image">
+            <img ng-src="{{movie.image}}" alt="image">
+          </td>
+          <td class="title">{{movie.title}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

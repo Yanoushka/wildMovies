@@ -1,0 +1,16 @@
+<div class="container detailsMovie">
+    <h1>Movie Details</h1>
+    <div ng-show="$ctrl.movie">
+        <div class="commands">
+            <button type="button" class="btn btn-danger" ng-click="$ctrl.delete()">{{'BUTTON.DELETE' | translate}}</button>
+            <button type="button" class="btn btn-default" ui-sref="main.movies">{{'BUTTON.RETURN' | translate}}</button>
+        </div>
+        <img ng-src="{{$ctrl.movie.image}}">
+        <div>Title : {{$ctrl.movie.title}}</div>
+        <div>Description :{{$ctrl.movie.description}}</div>
+        <div>Actors : {{$ctrl.movie.actor}}</div>
+        <div>Realisator : {{$ctrl.movie.realisator}}</div>
+        <div>Year : {{$ctrl.movie.year}}</div>
+        <div>Category : {{$ctrl.movie.category.name}}</div>
+    </div>
+</div>
