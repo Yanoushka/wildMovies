@@ -71,7 +71,7 @@ angular.module('moviesApp')
         }
       })
 
-      .state('main.search', {
+      .state('main.results', {
         url: 'searchResults',
         component: 'searchResults',
         resolve: {
