@@ -12,11 +12,13 @@ angular.module('moviesApp')
         abstract: true,
       })
 
-      .state('footer', {
-        url: '/',
-        component: 'footer',
-        abstract: true,
-      })
+      // CORRECTION
+      // .state('footer', {
+      //   url: '/',
+      //   component: 'footer',
+      //   abstract: true,
+      // })
+      // --
 
       .state('main.movies', {
         url: 'list?{categoryId:int}',

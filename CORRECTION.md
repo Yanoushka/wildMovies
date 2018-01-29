@@ -1,0 +1,6 @@
+- Chapeau bas Yan, tu as vraiment faut du bon travail !
+- beaucoup de copier/coller bien sûr (comme tout le monde) mais intégrés intelligemment :)
+- attention au nombre d'espaces par tab dans ton éditeur: fixe-le à 2 ou à 4 mais tous tes fichiers doivent avoir la même valeur d'indentation.
+- faire un petit nettoyage de code pour enlever tous les bindings inutiles déclarés dans le code
+- la route sur le footer est inutile: le composant footer est uniquement instancié 'à la main' dans le template de main
+- le resolve 'caterories' de la route main.search ne me parait pas utile et aucune raison d'avoir un composant searchResults car les résultats de la recherche devrait s'afficher dans le template HTML du composant searchMovies (ng-repeat sur la liste récupérée par la recherche). J'imagine que cette recherche fera appel à l'API TMDBN: pense à lui faire un service dédié.
