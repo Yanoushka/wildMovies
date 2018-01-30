@@ -11,15 +11,7 @@ angular.module('moviesApp')
         component: 'main',
         abstract: true,
       })
-
-      // CORRECTION
-      // .state('footer', {
-      //   url: '/',
-      //   component: 'footer',
-      //   abstract: true,
-      // })
-      // --
-
+      
       .state('main.movies', {
         url: 'list?{categoryId:int}',
         publicRoute: true,
@@ -62,29 +54,6 @@ angular.module('moviesApp')
           }
         }
       })
-
-      .state('main.search', {
-        url: 'search',
-        component: 'searchMovies',
-        resolve: {
-          categories: (CategoriesService) => {
-            return CategoriesService.query().$promise;
-          }
-        }
-      })
-
-      .state('main.results', {
-        url: 'searchResults',
-        component: 'searchResults',
-        resolve: {
-          movie: (MoviesService, $transition$) => {
-            return MoviesService.get({
-              id: $transition$.params().id
-            }).$promise;
-          }
-        }
-      });
-
 
     $urlRouterProvider.otherwise('/list');
   });

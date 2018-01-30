@@ -1,8 +1,14 @@
 <div class="container adding">
-    
+
     <h1>Add a movie !</h1>
 
-    <form name="$ctrl.form" ng-submit="$ctrl.validate(file)">
+    <form ng-submit="$ctrl.search(search)">
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="search" placeholder="Search movie...">
+        </div>
+    </form>
+
+    <form name="$ctrl.form" ng-submit="$ctrl.validate()">
         <div class="error" ng-show="$ctrl.error">{{$ctrl.error}}</div>
         <div class="form-group">
             <label for="title">{{'MOVIE_ADD.TITLE' | translate}}</label>
@@ -41,7 +47,17 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label>Image (url)</label>
+                    <input type="text" class="form-control" ng-model="$ctrl.movie.image">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
             <div class="col-xs-6">
                 <div class="form-group">
                     <label for="image">{{'MOVIE_ADD.IMAGE' | translate}}</label>
@@ -56,12 +72,12 @@
                 </div>
             </div>
             <div class="col-xs-6">
-                <label for="preview">{{'MOVIE_ADD.PREVIEW' | translate}}</label>
-                <img id="preview" ngf-thumbnail="file" />
-                <p>{{$ctrl.progress}}</p>
-            </div>
+            <label for="preview">{{'MOVIE_ADD.PREVIEW' | translate}}</label>
+            <img id="preview" ngf-thumbnail="file" />
+            <p>{{$ctrl.progress}}</p>
         </div>
-        
+        </div> -->
+
         <button type="submit" class="btn btn-success">{{'BUTTON.SAVE' | translate}}</button>
         <button type="button" class="btn btn-default" ui-sref="main.movies">{{'BUTTON.CANCEL' | translate}}</button>
     </form>
