@@ -38,6 +38,10 @@ module.exports = {
       name: 'Amour',
       createdAt: new Date(),
       updatedAt: new Date()
+    }, {
+      name: 'Horreur',
+      createdAt: new Date(),
+      updatedAt: new Date()
     }], {});
   },
 
